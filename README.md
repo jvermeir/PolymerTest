@@ -18,9 +18,13 @@ eval $(docker-machine env polymer-dev)
 
 ### Check
 
+Download test project:
+<pre><code>curl -L https://github.com/googlecodelabs/polymer-first-elements/releases/download/v1.0/polymer-first-elements.zip > polymer-first-elements.zip
+unzip polymer-first-elements.zip -d dev
+</code></pre>
+
 Start Polymer test project:
 
 <pre><code>./run.sh
 Access in your browser on http://$DIP:8080/components/icon-toggle/demo/
 </code></pre>
-
